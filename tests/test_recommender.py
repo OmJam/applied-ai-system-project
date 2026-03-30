@@ -35,7 +35,10 @@ def test_recommend_returns_songs_sorted_by_score():
         favorite_genre="pop",
         favorite_mood="happy",
         target_energy=0.8,
-        likes_acoustic=False,
+        target_valence=0.9,
+        target_acousticness=0.2,
+        target_tempo=120.0,
+        target_danceability=0.8,
     )
     rec = make_small_recommender()
     results = rec.recommend(user, k=2)
@@ -51,7 +54,10 @@ def test_explain_recommendation_returns_non_empty_string():
         favorite_genre="pop",
         favorite_mood="happy",
         target_energy=0.8,
-        likes_acoustic=False,
+        target_valence=0.9,
+        target_acousticness=0.2,
+        target_tempo=120.0,
+        target_danceability=0.8,
     )
     rec = make_small_recommender()
     song = rec.songs[0]
