@@ -5,11 +5,18 @@ __pycache__/
 
 # Virtual environments
 .venv/
-env/
 venv/
+env/
+
+# Environment variable files
+.env
+.env.*
 
 # OS files
 .DS_Store
 
 # Pytest cache
 .pytest_cache/
+
+# Agent logs
+logs/
